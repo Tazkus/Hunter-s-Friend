@@ -202,17 +202,13 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.2.0'
+    minecraft 'net.minecraftforge:forge:${forge_version}'
     
     compileOnly fg.deobf("mezz.jei:jei-1.18.2:${jei_version}:api")
     runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:${jei_version}")
 
     // Cloth Config
     implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:${cloth_config_forge}")
-
-    // Dummy
-    runtimeOnly fg.deobf("curse.maven:selene-499980:4747959")
-    runtimeOnly fg.deobf("curse.maven:mmmmmmmmmmmm-225738:3820503")
 
     // MixinExtras
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.3.6"))
