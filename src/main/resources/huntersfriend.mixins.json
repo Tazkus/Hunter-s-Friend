@@ -1,0 +1,14 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "mod.tropidragon.huntersfriend.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "refmap": "huntersfriend.refmap.json",
+    "mixins": [
+        "MixinLivingEntity"
+    ],
+    "client": [],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
